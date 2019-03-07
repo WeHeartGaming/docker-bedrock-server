@@ -1,0 +1,7 @@
+version: 3
+minecraft:
+  build: .
+  ports:
+    - 19132:19132
+  volumes:
+    - ./config:/bedrockConfig
