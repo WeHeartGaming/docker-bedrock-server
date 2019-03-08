@@ -11,6 +11,8 @@ RUN unzip bedrock.zip -d bedrock
 
 COPY run.sh run.sh
 
+EXPOSE 19132/udp
+
 RUN mkdir bedrockConfig
 
 WORKDIR /bedrockConfig
