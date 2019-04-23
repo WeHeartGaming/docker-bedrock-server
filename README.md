@@ -17,5 +17,6 @@ We added the `-it` flags so you can attach to the server and run commands. Exit 
 
 ## Tags
 
-- `1.10.0.7`, `latest`
+- `1.11.0.23`, `latest`
+- `1.10.0.7`
 - `1.9.0.15`
