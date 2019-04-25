@@ -1,6 +1,6 @@
 FROM ubuntu:19.04
 
-ENV VERSION=1.10.0.7
+ENV VERSION=1.11.0.23
 
 RUN apt update && apt install -y unzip curl \
 	&& apt-get purge --auto-remove -y gnupg \
