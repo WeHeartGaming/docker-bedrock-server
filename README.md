@@ -24,6 +24,7 @@ To exit the attached server, without shutting it down, use the following key com
 
 ## Tags
 
-- `1.11.0.23`, `latest`
+- `1.11.1.2`, `latest`
+- `1.11.0.23`
 - `1.10.0.7`
 - `1.9.0.15`
