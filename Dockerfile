@@ -1,6 +1,6 @@
 FROM ubuntu:19.04
 
-ENV VERSION=1.11.1.2
+ENV VERSION=1.11.2.1
 
 RUN apt update && apt install -y unzip curl \
 	&& rm -rf /var/lib/apt/lists/*
