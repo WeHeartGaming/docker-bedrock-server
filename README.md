@@ -8,10 +8,25 @@ If you don't have any config files just start the server and stop it again and a
 
 ```sh
 docker run -itd \
-	--name bedrock \
-	-v "/yourDataPath:/bedrockConfig" \
-	-p 19132:19132/udp \
-	weheartgaming/bedrock-server:latest
+--name bedrock \
+-v "/yourDataPath:/bedrockConfig" \
+-p 19132:19132/udp \
+weheartgaming/bedrock-server:latest
+```
+
+```yml
+version: "3"
+services:
+  bedrock:
+    container_name: bedrock
+    image: weheartgaming/bedrock-server:latest
+    stdin_open: true
+    tty: true
+    ports:
+      - 19132:19132/udp
+    volumes:
+      - /yourDataPath:/bedrockConfig
+    restart: unless-stopped
 ```
 
 We added the `-it` flags so you can attach to the server and run commands.
